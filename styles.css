@@ -1,3 +1,4 @@
+/* dark */
 :root {
 
     --background-color: #000000 ;
@@ -6,6 +7,14 @@
     --border-color: #30363d;
 
 }
+
+/* light */
+/* :root{
+    --background-color: #fffffff3 ;
+    --text-color: #161515 ;
+    --line-color: #013aa5;
+    --border-color: #30363d;
+} */
 
 
 body {
