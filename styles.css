@@ -149,10 +149,12 @@ ul {
 
 
 .closing-message {
+    
     color: var(--line-color);
     text-align: center;
     margin-top: 50px;   
     margin-bottom: 50px;
+
 }
 
 
