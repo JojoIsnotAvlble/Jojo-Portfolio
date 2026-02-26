@@ -1,0 +1,149 @@
+:root {
+
+    --background-color: #000000 ;
+    --text-color: #ffffff ;
+    --line-color: #0dd306;
+    --border-color: #30363d;
+
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    max-width: 950px;
+    margin:40px auto;
+}
+
+.header {
+
+    border-bottom: 2px var(--line-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+}
+
+h1 {
+
+    color: var(--line-color);
+    font-weight: bold ;
+
+}
+
+p {
+
+     color: var(--line-color);
+    font-weight: normal ;
+
+}
+
+
+/* Need to learn more: implemented with Gemini */
+.box-blink{
+
+    display: inline-block;
+    width: 3px;
+    height: 45px;
+    background-color: var(--line-color);
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+
+}
+
+@keyframes blink {
+    
+    0%, 100%{ opacity: 1;}
+    50% { opacity: 0;}
+
+}
+
+
+
+
+ul {
+
+    list-style-type: "-> ";
+
+}
+
+
+/* Terminal box designs  */
+/* Need to learn more: heavy assistance with Gemini */
+:root {
+    --terminal-bg: #0d1117;
+    --header-bg: #161b22; 
+    --border-color: #30363d;
+    --text-color: #c9d1d9;
+    
+}
+
+.terminal-window {
+
+    background-color: var(--terminal-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;  
+
+}
+
+/* Need to learn more: implemented with Gemini */
+.terminal-window:hover {
+
+    transform: scale(1.10); /* Moves the box up by 5 pixels */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Makes the shadow deeper as it 'lifts' */
+    border-color: var(--line-color);
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.terminal-header {
+    
+    background-color: var(--header-bg);
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+}
+
+
+.terminal-title {
+
+    color: #8b949e;
+    font-size: 13px;
+    margin-left: 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+
+}
+
+.terminal-window:hover .terminal-title {
+    color: #58a6ff;
+    
+    /* ai */
+    /* This creates the 'glow' effect around the text */
+    text-shadow: 0 0 8px rgba(88, 166, 255, 0.8), 
+                 0 0 12px rgba(88, 166, 255, 0.4);
+}
+
+.terminal-body {
+
+    padding: 12px;
+    color: var(--text-color);
+}
+
+
+.closing-message {
+    color: var(--line-color);
+    text-align: center;
+    margin-top: 50px;   
+    margin-bottom: 50px;
+}
+
+
