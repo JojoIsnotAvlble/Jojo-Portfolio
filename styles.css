@@ -90,6 +90,12 @@ ul {
     
 }
 
+p {
+
+    color: var(--text-color);
+
+}
+
 .terminal-window {
 
     background-color: var(--terminal-bg);
@@ -149,7 +155,7 @@ ul {
 
 
 .closing-message {
-    
+
     color: var(--line-color);
     text-align: center;
     margin-top: 50px;   
